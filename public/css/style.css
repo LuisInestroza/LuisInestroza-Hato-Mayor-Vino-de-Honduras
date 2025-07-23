@@ -475,12 +475,12 @@ section {
   max-width: 1200px;
   margin: 0 auto;
 }
-.section-header{
+.section-header-about{
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.section-header h2{
+.section-header-about h2{
   font-size: 2.5rem;
   color: var(--wine-primary);
   margin-bottom: 1rem;
@@ -488,14 +488,15 @@ section {
   display: inline-block;
 }
 
-.section-header h2::after{
-  content: '';
+.section-header-about h2::after{
+  content: "";
   position: absolute;
-  width: 50%;
-  height: 3px;
-  background-color: var(--gold-primary);
   bottom: -10px;
-  left: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--gold-primary);
 }
 
 .about-content{
