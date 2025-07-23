@@ -470,7 +470,152 @@ section {
 }
 
 /* Sección "Sobre nosotros" moderna */
-.about {
+.about-section{
+  padding: 5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2{
+  font-size: 2.5rem;
+  color: var(--wine-primary);
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: var(--gold-primary);
+  bottom: -10px;
+  left: 25%;
+}
+
+.about-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.about-image{
+  flex: 1;
+  min-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.about-image img{
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img{
+  transform: scale(1.05);
+}
+
+.about-text{
+  flex: 1;
+  min-width: 300px;
+
+}
+
+.about-text h3{
+  font-size: 1.7rem;
+  color: var(--wine-primary);
+  margin-bottom: 1.5rem;
+}
+.about-text p{
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+
+}
+.mission-vision{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card{
+  flex:1;
+  min-width: 300px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-top: 4px solid var(--wine-primary);
+}
+
+.card h3{
+  color: var(--wine-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.card p{
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.awards{
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.awards h3{
+  font-size: 1.8rem;
+  color: var(--wine-primary);
+  margin-bottom: 2rem;
+}
+
+.awards-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.award-item{
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.award-item:hover{
+  transform: translateY(-10px);
+}
+
+.award-item img{
+  width: 155px;
+  height: 155px;
+  margin-bottom: 1rem;
+}
+
+.award-item h4{
+  color: var(--wine-primary);
+  margin-bottom: 0.5rem;
+}
+
+.award-item p{
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+/* .about {
   background: linear-gradient(
     135deg,
     var(--wine-primary) 0%,
@@ -535,7 +680,7 @@ section {
 .stat-label {
   font-size: 0.9rem;
   opacity: 0.8;
-}
+} */
 
 /* Testimonios modernos */
 .testimonials {
@@ -754,14 +899,14 @@ footer {
 
 /* Responsive design */
 @media (max-width: 992px) {
-  .about-container {
+  /* .about-container {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
+  } */
 
-  .about-image {
+  /* .about-image {
     order: -1;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -798,6 +943,19 @@ footer {
   .newsletter-input,
   .btn {
     width: 100%;
+  }
+
+  .about-content{
+    flex-direction: column;
+
+  }
+
+  .section-header h2{
+    font-size: 2rem;
+  }
+
+  .about-text h3{
+    font-size: 1.5rem;
   }
 }
 
