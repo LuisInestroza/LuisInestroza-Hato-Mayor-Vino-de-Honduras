@@ -46,7 +46,7 @@ const animateOnScroll = function () {
 // Set initial state for animated elements
 document
   .querySelectorAll(
-    ".wine-card, .about-content,.about-content-catalogo,.about-content-catalogo,.testimonial-card"
+    ".wine-card, .about-content,.about-content-catalogo,.about-content-catalogo"
   )
   .forEach((el) => {
     el.style.opacity = "0";

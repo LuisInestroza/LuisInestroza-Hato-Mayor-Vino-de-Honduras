@@ -269,7 +269,7 @@ nav a:hover {
 
 /* Secciones modernas */
 section {
-  padding: 6rem 5%;
+  padding: 9rem 5%;
   position: relative;
 }
 
@@ -471,7 +471,7 @@ section {
 
 /* Sección "Sobre nosotros" moderna */
 .about-section{
-  padding: 5rem 1.5rem;
+  padding: 9rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -481,7 +481,7 @@ section {
 }
 
 .section-header-about h2{
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
   color: var(--wine-primary);
   margin-bottom: 1rem;
   position: relative;
@@ -569,6 +569,23 @@ section {
   color: var(--text-dark);
   line-height: 1.7;
 }
+.nosotros {
+  margin-top: 3rem;
+}
+
+.nosotros .nosotros-about h2{
+  color:  var(--wine-primary);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.text-nosotros{
+  color: var(--text-dark);
+  text-align: justify;
+  line-height: 1.7;
+}
 
 .awards{
   margin-top: 4rem;
@@ -579,6 +596,12 @@ section {
   font-size: 1.8rem;
   color: var(--wine-primary);
   margin-bottom: 2rem;
+}
+.awards h4{
+  color: var(--wine-primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .awards-list{
@@ -610,6 +633,7 @@ section {
 .award-item h4{
   color: var(--wine-primary);
   margin-bottom: 0.5rem;
+  
 }
 
 .award-item p{
@@ -683,94 +707,7 @@ section {
   opacity: 0.8;
 } */
 
-/* Testimonios modernos */
-.testimonials {
-  background-color: var(--bg-light);
-}
 
-.testimonial-slider {
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.testimonial-card {
-  background: white;
-  padding: 2rem;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  text-align: center;
-  margin: 0 1rem;
-}
-
-.testimonial-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto 1rem;
-  border: 3px solid var(--gold-primary);
-}
-
-.testimonial-quote {
-  font-style: italic;
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.testimonial-quote::before,
-.testimonial-quote::after {
-  content: '"';
-  font-size: 2rem;
-  color: var(--gold-primary);
-  opacity: 0.3;
-}
-
-.testimonial-author {
-  font-weight: 600;
-  color: var(--wine-primary);
-}
-
-.testimonial-role {
-  font-size: 0.8rem;
-  color: var(--wine-accent);
-  display: block;
-}
-
-/* Newsletter moderna */
-.newsletter {
-  background: linear-gradient(rgba(90, 26, 38, 0.9), rgba(90, 26, 38, 0.9)),
-    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-  background-size: cover;
-  background-position: center;
-  color: var(--text-light);
-  text-align: center;
-  padding: 5rem 2rem;
-  border-radius: var(--radius-lg);
-  margin: 4rem auto;
-  max-width: 1200px;
-}
-
-.newsletter-form {
-  max-width: 500px;
-  margin: 2rem auto 0;
-  display: flex;
-  gap: 1rem;
-}
-
-.newsletter-input {
-  flex: 1;
-  padding: 0.8rem 1.5rem;
-  border-radius: var(--radius-full);
-  border: none;
-  font-family: inherit;
-  font-size: 1rem;
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.newsletter-input:focus {
-  outline: 2px solid var(--gold-primary);
-}
 
 /* Footer moderno */
 footer {
@@ -899,16 +836,16 @@ footer {
 }
 
 /* Responsive design */
-@media (max-width: 992px) {
-  /* .about-container {
+/* @media (max-width: 992px) {
+  .about-container {
     grid-template-columns: 1fr;
     gap: 2rem;
-  } */
+  } 
 
-  /* .about-image {
+  .about-image {
     order: -1;
-  } */
-}
+  } 
+} */
 
 @media (max-width: 768px) {
   header {
@@ -934,7 +871,7 @@ footer {
   }
 
   section {
-    padding: 4rem 5%;
+    padding: 7rem 5%;
   }
 
   .newsletter-form {
@@ -956,6 +893,10 @@ footer {
   }
 
   .about-text h3{
+    font-size: 1.5rem;
+  }
+
+  .nosotros .nosotros-about h2{
     font-size: 1.5rem;
   }
 }
