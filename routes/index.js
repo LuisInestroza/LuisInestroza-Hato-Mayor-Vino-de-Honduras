@@ -12,7 +12,7 @@ module.exports = () => {
   // Vino Don Alejandro
   router.get("/vinoTintoDonAlejandro", homeController.formularioVinoTintoDonAlejandro);
   // Vino Seco Naranja
-  router.get("/vinoSecoNaranja", homeController.formularioVinoSecoNaranja);
+  router.get("/vinoDulceNaranja", homeController.formularioVinoDulceNaranja);
   //Vino tinto Jaboticaba
   router.get("/vinoTintoJaboticaba", homeController.formularioVinoTintoJaboticaba);
   //Vino blanco de naranja

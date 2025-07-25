@@ -18,12 +18,12 @@ exports.formularioVinoTintoDonAlejandro = async (req, res) => {
 }
 
 // Mostrar formulario de vino de seco naranja
-exports.formularioVinoSecoNaranja = async (req, res) => {
-  res.render("vinoSecoNaranja", {
+exports.formularioVinoDulceNaranja = async (req, res) => {
+  res.render("vinoDulceNaranja", {
     barraProductos: true,
     mostrarFooter: true,
   });
-}
+};
 
 // Mostar formulario de vino tinto jaboticaba
 exports.formularioVinoTintoJaboticaba = async(req, res) => {
