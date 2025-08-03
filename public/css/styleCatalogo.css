@@ -128,7 +128,7 @@
 
 /* Sección de características */
 .product-features {
-  padding: 6rem 5%;
+  padding: 0rem 5% 6rem;
   background-color: var(--bg-light);
 }
 
@@ -136,7 +136,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .feature-card {
@@ -187,6 +187,7 @@
   .product-hero {
     grid-template-columns: 1fr;
     padding-top: 8rem;
+    padding-bottom: 0;
   }
   .gridUniq{
     margin: auto;
