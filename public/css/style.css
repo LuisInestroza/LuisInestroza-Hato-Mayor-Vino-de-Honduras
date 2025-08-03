@@ -213,7 +213,7 @@ nav a:hover {
 }
 
 .hero p {
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1.5rem, 2vw, 1.25rem);
   margin-bottom: 2.5rem;
   opacity: 0.9;
   animation: fadeInUp 1s ease 0.2s forwards;
@@ -891,6 +891,7 @@ footer {
 
   .about-content{
     flex-direction: column;
+    margin-bottom: 0;
 
   }
 
